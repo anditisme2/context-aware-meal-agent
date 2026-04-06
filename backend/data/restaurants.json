@@ -1,0 +1,42 @@
+[
+  {
+    "id": "r1",
+    "name": "Green Bowl",
+    "cuisine": "healthy",
+    "rating": 4.5,
+    "delivery_time_min": 25,
+    "tags": ["healthy", "vegan", "gluten-free", "salads"]
+  },
+  {
+    "id": "r2",
+    "name": "Spice Garden",
+    "cuisine": "indian",
+    "rating": 4.3,
+    "delivery_time_min": 35,
+    "tags": ["indian", "vegetarian", "spicy", "comfort"]
+  },
+  {
+    "id": "r3",
+    "name": "The Protein House",
+    "cuisine": "american",
+    "rating": 4.1,
+    "delivery_time_min": 30,
+    "tags": ["high-protein", "gym", "grilled", "keto"]
+  },
+  {
+    "id": "r4",
+    "name": "Noodle Street",
+    "cuisine": "asian",
+    "rating": 4.6,
+    "delivery_time_min": 20,
+    "tags": ["asian", "noodles", "soup", "comfort", "quick"]
+  },
+  {
+    "id": "r5",
+    "name": "Pizza Republic",
+    "cuisine": "italian",
+    "rating": 4.2,
+    "delivery_time_min": 40,
+    "tags": ["italian", "pizza", "comfort", "indulgent"]
+  }
+]

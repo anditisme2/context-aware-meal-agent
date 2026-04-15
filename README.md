@@ -1,4 +1,4 @@
-# 🍽️ Context-Aware Meal Agent
+# Context-Aware Meal Agent
 
 Ordering food can be a hassle when someone is busy or feeling unwell — and it requires decision-making based on dietary restrictions, preferences, and context. This project implements a context-aware AI agent that automates meal recommendations by:
 

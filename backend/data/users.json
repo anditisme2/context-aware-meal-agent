@@ -2,12 +2,27 @@
   {
     "id": "u1",
     "name": "Margery",
-    "dietary_restrictions": ["gluten-free"],
-    "allergies": ["nuts"],
+    "dietary_restrictions": [
+      "gluten-free"
+    ],
+    "allergies": [
+      "nuts"
+    ],
     "health_goal": "weight-loss",
-    "preferences": ["healthy", "light", "salads"],
-    "dislikes": ["spicy", "fried"],
-    "order_history": ["m1", "m2", "m8"],
+    "preferences": [
+      "healthy",
+      "light",
+      "salads"
+    ],
+    "dislikes": [
+      "spicy",
+      "fried"
+    ],
+    "order_history": [
+      "m1",
+      "m2",
+      "m8"
+    ],
     "feedback": {
       "m1": 5,
       "m2": 4,
@@ -17,12 +32,24 @@
   {
     "id": "u2",
     "name": "Jon",
-    "dietary_restrictions": ["vegetarian"],
+    "dietary_restrictions": [
+      "vegetarian"
+    ],
     "allergies": [],
     "health_goal": "muscle-gain",
-    "preferences": ["indian", "comfort", "high-protein"],
-    "dislikes": ["raw salads"],
-    "order_history": ["m3", "m4", "m6"],
+    "preferences": [
+      "indian",
+      "comfort",
+      "high-protein"
+    ],
+    "dislikes": [
+      "raw salads"
+    ],
+    "order_history": [
+      "m3",
+      "m4",
+      "m6"
+    ],
     "feedback": {
       "m3": 5,
       "m4": 4,
@@ -35,14 +62,46 @@
     "dietary_restrictions": [],
     "allergies": [],
     "health_goal": "general",
-    "preferences": ["asian", "quick", "comfort"],
+    "preferences": [
+      "asian",
+      "quick",
+      "comfort"
+    ],
     "dislikes": [],
-    "order_history": ["m7", "m8", "m9", "m10"],
+    "order_history": [
+      "m7",
+      "m8",
+      "m9",
+      "m10"
+    ],
     "feedback": {
       "m7": 5,
       "m8": 5,
       "m9": 4,
       "m10": 3
+    }
+  },
+  {
+    "id": "u4",
+    "name": "Sansa",
+    "allergies": [],
+    "dietary_restrictions": [
+      "lactose-intolerant"
+    ],
+    "preferences": [
+      "healthy",
+      "comfort",
+      "indian"
+    ],
+    "health_goal": "keto",
+    "dislikes": [
+      "fried"
+    ],
+    "order_history": [
+      "m5"
+    ],
+    "feedback": {
+      "m5": "4"
     }
   }
 ]

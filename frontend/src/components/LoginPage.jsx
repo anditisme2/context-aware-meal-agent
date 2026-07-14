@@ -19,70 +19,74 @@ function LoginPage({ onLogin }) {
   }
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "Georgia, serif" }}>
+    <div style={{
+      minHeight: "100vh",
+      background: "white",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}>
 
-      {/* food photo section */}
+      {/* full width photo */}
       <div style={{
-        position: "relative",
+        width: "100%",
         height: "55vh",
         backgroundImage: `url(${foodBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        flexShrink: 0,
+      }} />
+
+      {/* double orange lines below photo */}
+      <div style={{ width: "100%", flexShrink: 0 }}>
+        <div style={{ height: "3px", background: "#E87722" }} />
+        <div style={{ height: "3px", background: "#E87722", marginTop: "3px" }} />
+      </div>
+
+      {/* card */}
+      <div style={{
+        marginTop: "-140px",
+        width: "520px",
+        borderRadius: "20px",
+        overflow: "hidden",
+        boxShadow: "0 8px 40px rgba(0,0,0,0.18)",
+        zIndex: 10,
       }}>
-        {/* branding */}
+
+        {/* blurred top — title and subtitle on photo */}
         <div style={{
-          position: "absolute",
-          bottom: "40px",
-          width: "100%",
+          background: "rgba(255, 243, 225, 0.5)",
+          backdropFilter: "blur(6px)",
+          WebkitBackdropFilter: "blur(6px)",
+          padding: "40px 40px 40px",
           textAlign: "center",
         }}>
           <h1 style={{
-            color: "white",
-            fontSize: "3.5rem",
             fontFamily: "'La Belle Aurore', cursive",
-            margin: 0,
+            fontSize: "3rem",
+            color: "white",
+            margin: "10px 0 6px 0",
+            textShadow: "0 2px 8px rgba(0,0,0,0.3)",
           }}>
             Annam
           </h1>
           <p style={{
-            color: "white",
+            fontFamily: "Georgia, serif",
             fontSize: "1rem",
             fontWeight: "bold",
-            margin: "8px 0 0 0",
-            letterSpacing: "1px",
+            color: "#1a1a1a",
+            margin: 0,
           }}>
             Your Intelligent Meal Agent
           </p>
         </div>
 
-        {/* orange bottom border line */}
-        <div style={{
-          position: "absolute",
-          bottom: 0,
-          width: "100%",
-          height: "4px",
-          background: "orange",
-        }} />
-      </div>
-
-      {/* login card section */}
-      <div style={{
-        flex: 1,
-        background: "#f5f5f5",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-start",
-        paddingTop: "0",
-      }}>
+        {/* solid cream bottom — inputs */}
         <div style={{
           background: "#FFF3E8",
-          borderRadius: "16px",
-          padding: "32px 40px",
-          width: "380px",
-          marginTop: "-30px",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+          padding: "28px 32px 36px",
+          textAlign: "center",
         }}>
-
           <input
             type="text"
             placeholder="Username/ mail"
@@ -92,10 +96,10 @@ function LoginPage({ onLogin }) {
             style={{
               width: "100%",
               padding: "14px 16px",
-              borderRadius: "8px",
-              border: "1px solid #ddd",
+              borderRadius: "10px",
+              border: "1.5px solid #ddd",
               fontSize: "1rem",
-              marginBottom: "16px",
+              marginBottom: "14px",
               fontFamily: "Georgia, serif",
               background: "white",
               boxSizing: "border-box",
@@ -112,10 +116,10 @@ function LoginPage({ onLogin }) {
             style={{
               width: "100%",
               padding: "14px 16px",
-              borderRadius: "8px",
-              border: "1px solid #ddd",
+              borderRadius: "10px",
+              border: "1.5px solid #ddd",
               fontSize: "1rem",
-              marginBottom: "16px",
+              marginBottom: "24px",
               fontFamily: "Georgia, serif",
               background: "white",
               boxSizing: "border-box",
@@ -124,7 +128,7 @@ function LoginPage({ onLogin }) {
           />
 
           {error && (
-            <p style={{ color: "red", fontSize: "0.85rem", marginBottom: "12px" }}>
+            <p style={{ color: "#C0392B", fontSize: "0.85rem", marginBottom: "12px" }}>
               {error}
             </p>
           )}
@@ -132,16 +136,16 @@ function LoginPage({ onLogin }) {
           <button
             onClick={handleLogin}
             style={{
-              width: "100%",
+              width: "60%",
               padding: "14px",
-              background: "orange",
+              background: "#E87722",
               color: "white",
-              border: "2px solid #333",
+              border: "none",
               borderRadius: "30px",
               fontSize: "1.1rem",
               fontFamily: "Georgia, serif",
-              cursor: "pointer",
               fontWeight: "bold",
+              cursor: "pointer",
             }}
           >
             Enter
